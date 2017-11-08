@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { JazzmenComponent } from './jazzmen/jazzmen.component';
+import { JazzmenListComponent } from './jazzmen/jazzmen-list/jazzmen-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JazzmenComponent
+    JazzmenComponent,
+    JazzmenListComponent
   ],
   imports: [
     BrowserModule,
