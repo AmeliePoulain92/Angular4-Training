@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Jazzman } from './jazzman.model';
 
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.css']
 })
-export class IntroComponent implements OnInit {
 
-  constructor() { }
+export class IntroComponent {
 
-  ngOnInit() {
-  }
+  jazzmen: Jazzman[] = [
+  	new Jazzman('Coltrane', 'hard-bop', '1955'),
+  	new Jazzman('Davis', 'modal', '1945')
+  ];
 
 }

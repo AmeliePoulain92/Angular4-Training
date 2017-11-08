@@ -1,3 +1,5 @@
-<p>
-  intro works!
-</p>
+<ul>
+	<li *ngFor="let jazzman of jazzmen; let i = index">
+		{{i + 1}} - {{jazzman.name}}
+	</li>
+</ul>
