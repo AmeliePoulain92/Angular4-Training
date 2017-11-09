@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Jazzman } from '../jazzman.model';
 
 
@@ -9,6 +9,7 @@ import { Jazzman } from '../jazzman.model';
 })
 export class JazzmenListComponent implements OnInit {
 
+  @Input() genre: string;
   jazzmen: Jazzman[] = [
   	new Jazzman('Coltrane', 'hard-bop', '1955'),
   	new Jazzman('Davis', 'modal', '1945')
